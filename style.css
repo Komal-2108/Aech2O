@@ -144,7 +144,7 @@ section.visible {
             font-size: 2rem;
         }
         #TandC{
-            height:250px;
+           
              background-image: url('assets/bg6.jpeg');
              background-size: cover; 
              border-radius: 0.5rem;
@@ -189,6 +189,14 @@ section.visible {
             text-align: center;
             margin-bottom: 3rem;
         }
+        /* .left img,
+.left-choose img,
+.left-offer img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
         /* Responsive design for tablets and mobile */
 @media (max-width: 768px) {
     header {
@@ -227,4 +235,16 @@ section.visible {
         padding: 15px;
     }
 }
+@media (max-width: 768px) {
+    .left img,
+    .left-choose img,
+    .left-offer img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+
+
 
