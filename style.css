@@ -113,7 +113,7 @@ section.visible {
              margin-right: 1rem;
         }
         .left-choose img {
-            margin-left: 20%;
+            /* margin-left: 20%; */
             max-width: 350px;
         }
         #why-choose ul {
