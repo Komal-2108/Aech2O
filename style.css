@@ -6,7 +6,7 @@ body {
              
         }
       
-        header {
+        /* header {
             background: white;
             padding: 15px 30px;
             display: flex;
@@ -31,7 +31,37 @@ body {
             text-decoration: none;
             color: #023e8a;
             font-weight: bold;
-        }
+        } */
+         header {
+    background: #f1f1f1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allows items to stack on mobile */
+    color: #0077b6;
+}
+
+header img {
+    height: 100px;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #023e8a;
+    font-weight: bold;
+}
+
         h1 {
             color: #023e8a;
         }
@@ -175,3 +205,36 @@ section.visible {
             text-align: center;
             margin-bottom: 3rem;
         }
+        /* Responsive design for tablets and mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #about, #offering, #why-choose {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left img, .right img, .left-offer img, .right-offer img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    table {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .contact-details {
+        font-size: 14px;
+    }
+}
